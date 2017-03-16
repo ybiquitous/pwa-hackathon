@@ -16,9 +16,9 @@
     </form>
 
     <script>
-      fetch('/api/data')
-        .then(res => res.json())
-        .then(json => { document.querySelector('h1').textContent = json.message })
+      /* fetch('/api/data')
+       *   .then(res => res.json())
+       *   .then(json => { document.querySelector('h1').textContent = json.message })*/
 
       document.querySelector('form').addEventListener('submit', (event) => {
         event.preventDefault()
