@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hello Node.js!</title>
+  </head>
+  <body>
+    <h1></h1>
+
+    <form>
+      <input type="text" placeholder="Input message">
+      <button type="submit">Echo</button>
+    </form>
+
+    <script>
+      fetch('/api/data')
+        .then(res => res.json())
+        .then(json => { document.querySelector('h1').textContent = json.message })
+
+      document.querySelector('form').addEventListener('submit', (event) => {
+        event.preventDefault()
+
+        fetch('/api/data', {
+          method: 'POST',
+          body: JSON.stringify({ message: document.querySelector('input').value }),
+          headers: { 'Content-Type': 'application/json' },
+        })
+          .then(res => res.json())
+          .then(json => alert(json.message))
+      })
+    </script>
+  </body>
+</html>

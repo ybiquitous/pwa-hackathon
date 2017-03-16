@@ -1,0 +1,22 @@
+{
+  "name": "pwa-hackathon",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/ybiquitous/pwa-hackathon.git",
+  "author": "ybiquitous <10koba01@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "body-parser": "*",
+    "express": "*"
+  },
+  "devDependencies": {
+    "eslint": "*",
+    "eslint-config-ybiquitous": "*",
+    "nodemon": "*"
+  }
+}
