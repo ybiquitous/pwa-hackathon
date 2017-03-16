@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="manifest" href="manifest.json">
     <title>Hello Node.js!</title>
   </head>
   <body>
@@ -25,8 +26,8 @@
           body: JSON.stringify({ message: document.querySelector('input').value }),
           headers: { 'Content-Type': 'application/json' },
         })
-          .then(res => res.json())
-          .then(json => alert(json.message))
+             .then(res => res.json())
+             .then(json => alert(json.message))
       })
     </script>
   </body>

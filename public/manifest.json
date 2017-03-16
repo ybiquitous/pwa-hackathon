@@ -1,0 +1,11 @@
+{
+  "name": "PWA Hackathon",
+  "description": "This app is maded in PWA Hackathon event.",
+  "short_name": "PWA",
+  "icons": [{
+    "src": "images/icon.png",
+    "sizes": "512x512"
+  }],
+  "start_url": "/",
+  "display": "standalone"
+}
